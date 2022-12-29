@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript News Post test</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <div style="flex: 1;"></div>
+            <h1  style="flex: 3;" >Our News</h1>
+            <a href="./pages/createNews.html"><button  style="flex: 1;">Create News</button></a>
+        </header>
+        <section class="newsPosts" id="newsPosts">
+           
+        </section>
+        <div class="pagination">
+            <button id="first" onclick="firstPage()">&laquo;</button> 
+            <button id="previous" onclick="previousPage()">Previous</button> 
+            <p class="active" href="#" id="currentPage">1</p>
+            <button id="next" onclick="nextPage()">Next</button> 
+            <button id="last" onclick="lastPage()">&raquo;</button> 
+          </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

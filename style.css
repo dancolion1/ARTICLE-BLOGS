@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+body {
+  background: #f4faf9;
+}
+.container,
+.nContainer {
+  padding: 0;
+  width: 85%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.nContainer {
+  padding-top: 1rem;
+}
+.nContainer header img {
+  margin-bottom: 0.5rem;
+  height: 20rem;
+}
+.container header {
+  display: flex;
+  align-items: center;
+}
+header button {
+  margin: 0.5rem 0;
+  color: #f4faf9;
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 8rem;
+  border-radius: 5px;
+  background-color: #1b4948;
+  cursor: pointer;
+}
+header h1 {
+  color: #1b4948;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.newsPosts {
+  width: 98%;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.newsCard {
+  margin: 1rem 1.5rem;
+  padding: 1rem;
+  width: 28%;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.newsCard:hover {
+  box-shadow: 6px 7px 26px -10px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.newsCard img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.newsCard h2 {
+  margin: 0.5rem 0;
+  color: #1b4948;
+  text-transform: capitalize;
+}
+.newsCard button {
+  margin: 0.5rem 0;
+  color: #f4faf9;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1b4948;
+  cursor: pointer;
+}
+
+.newsCard h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+  color: #b3b3b3;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+/* Pagination links */
+.pagination button,
+.pagination p {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: unset;
+  border: none;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Style the active/current link */
+.pagination p.active {
+  background-color: #1b4948;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #b3b3b3;
+}
+.newstext {
+  text-align: center;
+  color: #8ea7a4;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.comment {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.comment h3 {
+  font-size: 1.5rem;
+  color: #1b4948;
+  padding: 1rem 0;
+}
+.comment-list {
+  width: 40%;
+}
+.comment-list aside {
+  display: flex;
+  border-bottom: 1px solid #8ea7a4;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.comment-list aside img {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.comment-list article {
+  flex: 1;
+}
+.comment-list aside article {
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.comment-list aside h4 {
+  color: #1b4948;
+  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
+}
+.comment-list aside p {
+  color: #8ea7a4;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.comment-form {
+  /* border: 1px solid #1b4948; */
+  width: 40%;
+}
+.createForm {
+  width: 60%;
+  margin: auto;
+}
+
+.createForm h3 {
+  text-align: center;
+  color: #1b4948;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.createForm fieldset {
+  border: 1px solid #1b4948;
+  margin-bottom: 1rem;
+}
+.createForm legend {
+  font-size: 1.1rem;
+  color: #1b4948;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+.createForm input {
+  margin-bottom: 0;
+  border: none;
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #a2afad;
+  font-size: 0.9rem;
+}
+.createForm input:focus {
+  outline: none;
+}
+.comment-form input {
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  background-color: #f4faf9;
+  border: 1px solid #1b4948;
+  font-size: 0.9rem;
+}
+form {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+.comment-form button,
+.createForm button {
+  background-color: #ffe3e3;
+  color: orangered;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.createForm button {
+  width: 100%;
+}
+.delete {
+  color: red;
+  background-color: unset;
+  border: none;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+.delete:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.edit {
+  color: #6495;
+  background-color: unset;
+  border: none;
+  font-weight: 700;
+}
+.edit:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
